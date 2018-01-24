@@ -4,10 +4,10 @@
 
 .ui-tab {
     cursor: pointer;
+    z-index: 1;
     transform: translateZ(0);
     transition: all $transition-timing ease;
     outline: 0;
-    z-index: 1;
 
     h6 {
         width: max-content;

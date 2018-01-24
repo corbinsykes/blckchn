@@ -1,6 +1,6 @@
-@import '../../../ui-kit/variables';
-@import '../../../ui-kit/keyframes';
-@import '../../../ui-kit/ui-responsive';
+@import '../../../ui-kit/base/variables';
+@import '../../../ui-kit/base/keyframes';
+@import '../../../ui-kit/base/responsive';
 
 .chart,
 .chart-detail,
@@ -10,28 +10,28 @@
 
 .chart {
     padding: 1rem;
+    border: 1px solid $gray-7;
     cursor: pointer;
     transition: all $transition-timing ease-in;
-    border: 1px solid $gray-7;
 
     h4 {
-        margin: 1rem 0 1rem;
+        margin: 1rem 0;
         padding-left: 1rem;
     }
 
     &:hover {
         background-color: $white;
-        transform: scale(1.025);
         box-shadow: 0.25rem 0.25rem 0.625rem $gray-3;
+        transform: scale(1.025);
     }
 }
 
 .chart-detail-mask {
-    position: fixed;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    position: fixed;
     top: 0;
     left: 0;
     height: 100vh;
@@ -47,8 +47,8 @@
     display: flex;
     width: calc(100vw - 10%);
     padding: 0 1rem;
-    z-index: 3;
     background-color: $gray-0;
+    z-index: 3;
 
     @include responsive(md) {
         padding: 0 2rem;

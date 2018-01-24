@@ -14,9 +14,9 @@ p,
 p2,
 p3 {
     color: $gray-10;
+    transition: color $transition-timing ease;
     font-family: 'Montserrat', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
     -webkit-font-smoothing: antialiased;
-    transition: color $transition-timing ease;
 }
 
 h1,

@@ -1,0 +1,239 @@
+files:
+  ignore: 'src/styles.scss'
+
+options:
+  merge-default-rules: false
+
+rules:
+  attribute-quotes:
+    - 2
+    - include: true
+
+  border-zero:
+    - 2
+    - convention: '0'
+
+  brace-style:
+    - 2
+    - style: '1tbs'
+    - allow-single-line: false
+
+  clean-import-paths:
+    - 2
+    - leading-underscore: false
+    - filename-extension: false
+
+  declarations-before-nesting: 2
+
+  empty-line-between-blocks:
+    - 2
+    - include: true
+    - allow-single-line-rulesets: false
+
+  final-newline:
+    - 2
+    - include: true
+
+  force-element-nesting: 2
+
+  hex-notation:
+    - 2
+    - style: lowercase
+
+  indentation:
+    - 2
+    - size: 4
+
+  leading-zero:
+    - 2
+    - include: true
+
+  nesting-depth:
+    - 1
+    - max-depth: 2
+
+  no-color-hex: 2
+
+  no-color-keywords: 2
+
+  no-color-literals: 
+    - 2
+    - allow-rgba: true
+
+  no-duplicate-properties: 2
+
+  no-empty-rulesets: 2
+
+  no-extends: 2
+
+  no-ids: 2
+
+  no-important: 2
+
+  no-qualifying-elements:
+    - 2
+    - allow-element-with-attribute: true
+
+  no-trailing-whitespace: 2
+
+  no-trailing-zero: 2
+
+  no-universal-selectors: 2
+
+  one-declaration-per-line: 2
+
+  property-sort-order:
+    - 2
+    -
+      order:
+        - content
+        - display
+        - grid-template-areas
+        - grid-areas
+        - grid-area
+        - grid-auto-flow
+        - grid-auto-rows
+        - grid-auto-columns
+        - grid-template-rows
+        - grid-row
+        - grid-row-start
+        - grid-row-end
+        - grid-row-gap
+        - grid-template-columns
+        - grid-column
+        - grid-column-start
+        - grid-column-end
+        - grid-column-gap
+        - grid-gap
+        - flex-direction
+        - align-content
+        - align-items
+        - align-self
+        - justify-content
+        - flex
+        - flex-basis
+        - flex-flow
+        - flex-grow
+        - flex-shrink
+        - flex-wrap
+        - position
+        - top
+        - right
+        - bottom
+        - left
+        - min-height
+        - max-height
+        - height
+        - min-width
+        - max-width
+        - width
+        - margin
+        - margin-top
+        - margin-right
+        - margin-bottom
+        - margin-left
+        - padding
+        - padding-top
+        - padding-right
+        - padding-bottom
+        - padding-left
+        - color
+        - background
+        - background-image
+        - background-position
+        - background-size
+        - background-repeat
+        - background-clip
+        - background-color
+        - border
+        - border-width
+        - border-style
+        - border-color
+        - border-top
+        - border-top-color
+        - border-right
+        - border-right-color
+        - border-bottom
+        - border-bottom-color
+        - border-left
+        - border-left-color
+        - border-radius
+        - box-shadow
+        - cursor
+        - overflow
+        - overflow-x
+        - overflow-y
+        - opacity
+        - z-index
+        - transform
+        - transition
+        - animation
+        # - other properties
+
+  property-units:
+    - 2
+    -
+      global: 'rem'
+      per-property: {
+        margin-top: ['rem', vh],
+        border: ['rem', 'px'],
+        border-top: ['rem', 'px'],
+        border-right: ['rem', 'px'],
+        border-bottom: ['rem', 'px'],
+        border-left: ['rem', 'px'],
+        border-width: ['rem', 'px'],
+        height: ['rem', 'vh'],
+        width: ['rem', 'vw'],
+        transition: ['ms', 's'],
+        animation: ['ms', 's'],
+        animation-delay: ['ms', 's'],
+        letter-spacing: ['px']
+      }
+
+  pseudo-element: 2
+
+  quotes:
+    - 2
+    - style: single
+
+  shorthand-values:
+    - 2
+    - allowed-shorthands: [1,2,3]
+
+  single-line-per-selector: 2
+
+  space-after-colon:
+    - 2
+    - include: true
+
+  space-after-comma:
+    - 2
+    - include: true
+
+  space-around-operator:
+    - 2
+    - include: true
+
+  space-before-bang:
+    - 2
+    - include: true
+
+  space-before-brace:
+    - 2
+    - include: true
+
+  space-before-colon:
+    - 2
+    - include: false
+
+  space-between-parens:
+    - 2
+    - include: false
+
+  trailing-semicolon:
+    - 2
+    - include: true
+
+  url-quotes: 2
+
+  zero-unit: 2

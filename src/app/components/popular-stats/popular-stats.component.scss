@@ -1,5 +1,5 @@
-@import '../../../ui-kit/variables';
-@import '../../../ui-kit/ui-responsive';
+@import '../../../ui-kit/base/variables';
+@import '../../../ui-kit/base/responsive';
 
 .popular-stats {
     display: grid;
@@ -12,8 +12,8 @@
     }
 
     @include responsive(lg) {
-        grid-template-columns: repeat(4, 1fr);
         grid-template-rows: 100%;
+        grid-template-columns: repeat(4, 1fr);
     }
 }
 
