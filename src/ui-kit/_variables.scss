@@ -1,0 +1,31 @@
+// breakpoints
+$screen-sm-min: 30rem; // 480px
+$screen-md-min: 48rem; // 768px
+$screen-lg-min: 65rem; // 1040px
+$screen-xl-min: 80rem; // 1280px
+
+// colors
+$white: rgb(255, 255, 255); // #ffffff
+$black: rgb(0, 0, 0); // #000000
+
+$gray-10: rgb(43, 49, 58); // #2b313a
+$gray-7: rgb(145, 160, 173); // #91a0ad
+$gray-5: rgb(199, 207, 213); // #c7cfd5
+$gray-3: rgb(222, 226, 230); // #dee2e6
+$gray-1: rgb(238, 240, 242); // #eef0f2
+$gray-0: rgb(248, 250, 253); // #f8fafd
+
+$blue-0: rgb(0, 174, 230); // #00aee6
+$blue-1: rgb(0, 78, 146); //#004e92;
+$blue-2: rgb(0, 4, 40); //#000428;
+
+$gradient: linear-gradient(to right, $blue-2, $blue-1);
+$transparent: rgba(0, 0, 0, 0);
+$black-translucent: rgba(0, 0, 0, 0.4);
+
+//font weights
+$regular: 400;
+$semi-bold: 600;
+
+//
+$transition-timing: 436ms;

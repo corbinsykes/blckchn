@@ -1,0 +1,46 @@
+@import '../../../ui-kit/variables';
+@import '../../../ui-kit/ui-responsive';
+
+.popular-stats {
+    display: grid;
+    grid-auto-flow: row;
+    grid-gap: 1.25rem;
+
+    @include responsive(sm) {
+        grid-template-rows: repeat(2, 1fr);
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    @include responsive(lg) {
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: 100%;
+    }
+}
+
+.popular-stat {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 1rem;
+    border: 1px solid $gray-7;
+
+    h2 {
+        color: $blue-0;
+    }
+
+    h7 {
+        margin-bottom: 0.5rem;
+    }
+
+    span {
+        color: $gray-7;
+        text-transform: uppercase;
+        letter-spacing: 0.4px;
+        font-size: 0.75rem;
+        font-weight: $semi-bold;
+    }
+
+    @include responsive(lg) {
+        height: 6.25rem;
+    }
+}

@@ -1,0 +1,107 @@
+a {
+    text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+h7,
+h8,
+p,
+p2,
+p3 {
+    color: $gray-10;
+    font-family: 'Montserrat', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    transition: color $transition-timing ease;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+h7,
+h8 {
+    font-weight: $semi-bold;
+}
+
+h1 {
+    font-size: 1.875rem;
+    line-height: 2rem;
+}
+
+h2 {
+    font-size: 1.5rem;
+    line-height: 1.5rem;
+}
+
+h3 {
+    font-size: 1.125rem;
+    line-height: 1.5rem;
+}
+
+h4 {
+    font-size: 1rem;
+    line-height: 1rem;
+}
+
+h5 {
+    font-size: 0.875rem;
+    line-height: 1rem;
+}
+
+h6 {
+    font-size: 0.8125rem;
+    line-height: 1rem;
+}
+
+h7 {
+    font-size: 0.75rem;
+    line-height: 1rem;
+}
+
+h8,
+p4 {
+    font-size: 0.6875rem;
+    line-height: 1rem;
+}
+
+p,
+p2,
+p3 {
+    font-weight: $regular;
+}
+
+
+p {
+    font-size: 0.875rem;
+    line-height: 1rem;
+}
+
+p2 {
+    font-size: 0.8125rem;
+    line-height: 1rem;
+}
+
+p3 {
+    font-size: 0.75rem;
+    line-height: 1rem;
+}
+
+.t-caps {
+    text-transform: uppercase;
+    letter-spacing: 0.4px;
+}
+
+.t-regular {
+    font-weight: $regular;
+}
+
+.t-bold {
+    font-weight: $semi-bold;
+}

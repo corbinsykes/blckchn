@@ -1,0 +1,16 @@
+<div class="popular-stats">
+    <div
+        class="popular-stat"
+        *ngFor="let stat of popularStats">
+        <h7 class="t-caps">
+            {{stat?.name}}
+        </h7>
+
+        <h2 class="t-regular">
+            {{stat?.value | number:'1.0-2'}}
+            <span *ngIf="stat?.unit">
+                {{stat?.unit}}
+            </span>
+        </h2>
+    </div>
+</div>

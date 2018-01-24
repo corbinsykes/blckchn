@@ -1,0 +1,54 @@
+.ui-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 2rem;
+    padding: 0 0.5rem;
+    background-color: $transparent;
+    border: 1px solid $blue-1;
+    border-radius: 0;
+    cursor: pointer;
+    transition: all $transition-timing ease;
+    outline: 0;
+
+    h8 {
+        color: $blue-1;
+    }
+
+    &.is-active {
+        background-color: $blue-1;
+
+        h8 {
+            color: $white;
+        }
+    }
+}
+
+.ui-button--icon {
+    border: 0;
+
+    svg {
+        height: 1.25rem;
+    }
+
+}
+
+.ui-button-group {
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: 1fr;
+
+    .ui-button + .ui-button {
+        border-left: 0;
+    }
+
+    .ui-button:first-of-type {
+        border-top-left-radius: 0.25rem;
+        border-bottom-left-radius: 0.25rem;
+    }
+
+    .ui-button:last-of-type {
+        border-top-right-radius: 0.25rem;
+        border-bottom-right-radius: 0.25rem;
+    }
+}

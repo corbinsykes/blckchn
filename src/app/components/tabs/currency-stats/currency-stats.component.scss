@@ -1,0 +1,16 @@
+@import '../../../../ui-kit/variables';
+@import '../../../../ui-kit/ui-responsive';
+
+.charts {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 2.5rem 1.25rem;
+
+    @include responsive(md) {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    @include responsive(lg) {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}

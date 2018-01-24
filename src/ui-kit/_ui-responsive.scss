@@ -1,0 +1,21 @@
+@mixin responsive($screen-size) {
+    @if $screen-size == sm {
+        @media (min-width: $screen-sm-min) {
+            @content;
+        }
+    } @else if $screen-size == md {
+        @media (min-width: $screen-md-min) {
+            @content;
+        }
+    } @else if $screen-size == lg {
+        @media (min-width: $screen-lg-min) {
+            @content;
+        }
+    } @else if $screen-size == xl {
+        @media (min-width: $screen-xl-min) {
+            @content;
+        }
+    } @else {
+        @warn 'Breakpoint mixin supports: xs, sm, md, lg, xl';
+      }
+}

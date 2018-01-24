@@ -1,0 +1,16 @@
+<section class="ui-tabs">
+    <div
+        class="ui-tab"
+        [ngClass]="{'is-active': tab === tabsConstant.ACTIVE}"
+        *ngFor="let tab of tabs"
+        (click)="activate(tab)"
+        [routerLink]="tab.url">
+        <h6>{{tab.short_name}}</h6>
+    </div>
+</section>
+
+<div class="ui-tabs-divider"></div>
+
+<section class="ui-tabs-content">
+    <router-outlet></router-outlet>
+</section>

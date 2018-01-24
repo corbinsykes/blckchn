@@ -1,0 +1,28 @@
+// utility classes 2.0
+.u-flex {
+    display: flex;
+}
+
+.u-row {
+    flex-direction: row;
+}
+
+.u-column {
+    flex-direction: column;
+}
+
+.u-alignCenter {
+    align-items: center;
+}
+
+.u-alignBaseline {
+    align-items: baseline;
+}
+
+.u-justifyCenter {
+    justify-content: center;
+}
+
+.u-justifyBetween {
+    justify-content: space-between;
+}

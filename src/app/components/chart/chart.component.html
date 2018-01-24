@@ -1,0 +1,67 @@
+<section
+    class="chart"
+    [ngClass]="{'is-open': clicked}"
+    *ngIf="chart?.xValues">
+    <h4>{{chart?.title}}</h4>
+    <canvas
+        baseChart
+        [datasets]="chart.yValues"
+        [labels]="chart.xValues"
+        [options]="chart.options"
+        [colors]="chart.colors"
+        [chartType]="chart.type"
+        [legend]="false"
+        (chartClick)="toggleChartDetail()">
+    </canvas>
+    <p2>{{chart?.description}}</p2>
+</section>
+
+<section
+    class="chart-detail-mask"
+    *ngIf="showChartDetail">
+    <header class="chart-detail-header">
+        <h3>{{chart?.title}}</h3>
+
+        <button
+            class="ui-button ui-button--icon"
+            (click)="toggleChartDetail()">
+            <svg x="0px" y="0px" viewBox="0 0 1000 1000">
+                <g><path d="M990,928.8L561.3,500L990,71.3L928.8,10L500,438.8L71.3,10L10,71.3L438.8,500L10,928.8L71.3,990L500,561.3L928.8,990L990,928.8z"/></g>
+            </svg>
+        </button>
+    </header>
+
+    <div
+        class="chart-detail-main"
+        *ngIf="isDetailAvailable; else loading">
+        <canvas
+            baseChart
+            [datasets]="chartDetail.yValues"
+            [labels]="chartDetail.xValues"
+            [options]="chartDetail.options"
+            [colors]="chartDetail.colors"
+            [chartType]="chartDetail.type"
+            [legend]="false">
+        </canvas>
+    </div>
+    <ng-template #loading>
+        <div class="chart-detail-loader">
+            <div class="spinner">
+            </div>
+            <h2 class="t-regular">Loading...</h2>
+        </div>
+    </ng-template>
+
+    <footer class="chart-detail-footer">
+        <div class="ui-button-group">
+            <button
+                class="ui-button"
+                [ngClass]="{'is-active': shortcut === activeShortcut}"
+                type="button"
+                *ngFor="let shortcut of chartShortcuts"
+                (click)="selectShortcut(shortcut)">
+                <h8 class="t-caps">{{shortcut.name}}</h8>
+            </button>
+        </div>
+    </footer>
+</section>

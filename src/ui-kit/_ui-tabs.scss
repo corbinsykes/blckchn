@@ -1,0 +1,49 @@
+.ui-tabs {
+    display: flex;
+}
+
+.ui-tab {
+    cursor: pointer;
+    transform: translateZ(0);
+    transition: all $transition-timing ease;
+    outline: 0;
+    z-index: 1;
+
+    h6 {
+        width: max-content;
+        padding-bottom: 0.5rem;
+        color: $gray-7;
+        border-bottom: 4px solid $transparent;
+        transition: all $transition-timing ease;
+    }
+
+    &.is-active {
+        h6 {
+            border-bottom: 4px solid $gray-10;
+        }
+    }
+
+    &:hover,
+    &.is-active {
+        h6 {
+            color: $gray-10;
+        }
+    }
+
+    & + & {
+        margin-left: 1.25rem;
+    }
+}
+
+.ui-tabs-divider {
+    height: 0.125rem;
+    width: 100%;
+    background-color: $gray-5;
+    transform: translateY(-0.1875rem);
+}
+
+.ui-tabs-content {
+    display: flex;
+    flex-direction: column;
+    margin: 2.5rem 0;
+}
